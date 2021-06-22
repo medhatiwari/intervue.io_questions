@@ -1,3 +1,5 @@
+https://www.codechef.com/UWCOI20/problems/UWCOI20C/
+
 Kim Kardashian has broken in to the base, but after walking in circles, perplexed by the unintelligible base design of the JSA, she has found himself in a large, empty, and pure white, room.
 
 The room is a grid with H∗W cells, divided into H rows and W columns. The cell (i,j) is at height A[i][j]. Unfortunately, her advanced sense of smell has allowed her to sense a mercury leak, probably brought in by Jishnu to end his meddling. The mercury leak has a power (which determines what height the mercury can reach before dissipating into harmless quantities) and a source cell. It spreads from cells it has already reached to other cells in the four cardinal directions: north, south, east, and west. (That is, the mercury can spread up, down, right, or left in the grid, but not diagonally.) Mercury can only spread to a cell if the cell's height is strictly less than the power value.
