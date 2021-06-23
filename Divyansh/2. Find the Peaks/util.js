@@ -1,16 +1,18 @@
 const generateLargeNumberInput = () => {
-  // 0 to 1000 lines Max
-  const lines = Math.floor(Math.random()*100)+1;
-  let str =`${lines}
+  const lines = (Math.floor(Math.random()*10)) + 1;
+  let str=`${lines}
 `;
-  for(let idx =0;idx<lines;idx++){
-    let m =Math.floor(Math.random()*10)*10;
-    let n =Math.floor(Math.random()*10)*10;
-    let k =Math.floor(Math.random()*10)*10+n;
-    str += `${m} ${n} ${k}
+  for(let idx=0;idx<lines;idx++){
+    let k = (Math.floor(Math.random()*100)) + 1;
+    for(let i=0;i<k;i++){
+      let temp = (Math.floor(Math.random()*100)) + 1;
+      if(i!==k-1)
+      str +=`${temp}
 `;
+      else str +=`${temp}`;
+    }
   }
-  return str;
+return str;
 }
 module.exports = {
   generateLargeNumberInput
